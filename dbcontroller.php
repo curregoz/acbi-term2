@@ -1,9 +1,9 @@
 <?php
 class DBController {
-	private $host = "localhost";
-	private $user = "root";
-	private $password = "";
-	private $database = "shopdb";
+	private $host = "sql108.epizy.com";
+	private $user = "epiz_34309665";
+	private $password = "SSie5lJD4WXX";
+	private $database = "epiz_34309665_luca_bakery";
 	private $conn;
 	
 	function __construct() {
