@@ -33,3 +33,4 @@ jobs:
           **/.git**
           **/.github/**
           **/tblproduct.sql
+          **/README.md
