@@ -23,6 +23,13 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftpupload.net
-        username: epiz_34309665
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
+        port: ${{ secrets.FTP_PORT }}
+        server-dir: "./htdocs/"
+        exclude: |
+          **/.git/**
+          **/.git**
+          **/.github/**
+          **/tblproduct.sql
