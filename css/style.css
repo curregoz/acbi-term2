@@ -122,3 +122,13 @@ body {
 	clear: both;
 	margin: 38px 0px;
 }
+
+
+:root {
+	--primary: #35b7b8;
+	--secondary: #f7fad1;
+  }
+
+.no-decoration {
+    text-decoration: none;
+}

@@ -1,209 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-<link rel="stylesheet" type="text/css" href="css/mystyle.css">
-    
-<title>Luca Loaves Bakery</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <title>Luca Loaves Bakery</title>
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  
 </head>
 <body>
-    
-    <div class="sticky">
-        
-    <nav class="stroke" id="mainNav">
-        <ul>
-        	<li><a href="#Home">Home</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
- 	    <li><a href="shop.php">Shop</a></li>
-            <li><a href="#About">About Us</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-  </nav>
-    </div>
-
-    <div class="header">
-        
-       <a name="Home"><img src="assets/Logo.jpeg" alt="Business Logo">  
+  <header>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand mx-5" href="./#Home">
+        <img src="assets/logo-np-bg.png" alt="logo" style="width:12%;">
       </a>
-         
-        
-</div>
-        
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link luca-text" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link luca-text" href="#Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link luca-text" href="shop.php">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link luca-text" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link luca-text" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-<div class="row">
-  <div class="side">
-      <a name="About"><h2>About Me</h2></a>
-    
-    <img src="assets/baker.jpeg" alt="Photo of myself" style="height: 250px">
-    <p class="double"> Hi! My name is Jenny Berry. I had dreamed since childhood of being a pastry chef, but life took me down many other paths before I finally made the jump into setting up my own business. Luca Loaves is a new patisserie I opened in Sydney CBD.  </p>
-    
-    
-  </div>
-  <div class="main">
-    <h2>About Luca Loaves</h2>
-    <img src="assets/bsb-website-shots-39.jpeg" alt="Breads taken out of the oven" style="height: 250px">
-    <p class="double">At Luca Loaves, we take pride in moulding the perfect creation born from simple ingredients. We share a passion and love for our craft like no other. We respect the history of artisan bakers that have come before us, and we honour their heritage with a fresh and creative approach. 
-The communities we operate in demand that “homemade” means “homemade”. This is an authentic promise because this is where the real inspiration comes from. We bring raw ingredients to life, by combining them with passion and love to create authentic, honest baked goods that inspire a desire to bake more.
-        We’re 100% committed to bringing you freshly baked bread made from scratch every single day using only the best ingredients, like 100% Aussie wheat fresh from the farm.
-      </p> 
+  <main>
+    <a name="Home"></a>
+    <section class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(./assets/breads-sydney-bourke-street-bakery.jpeg); background-repeat: no-repeat; background-size: 100% 100%;">
+      <div class="container-fluid" style="text-align: center;">
+        <h1 class="text-white">Homemade aussie bread</h1>
+        <a class="btn btn-primary text-white mr-2" href="shop.php" role="button">Shop Now</a>
+      </div>
+    </section>
 
-    <br>
-   
-    
-  </div>
+    <div class="container-sm mt-5">
+      <div class="row">
+        <div class="col side">
+          <a name="About"><h2>About Me</h2></a>
+          <img src="assets/baker.jpeg" alt="Photo of myself" style="height: 250px">
+          <p class="double"> Hi! My name is Jenny Berry. I had dreamed since childhood of being a pastry chef, but life took me down many other paths before I finally made the jump into setting up my own business. Luca Loaves is a new patisserie I opened in Sydney CBD.  </p>
+        </div>
+        <div class="col main">
+            <h2>About Luca Loaves</h2>
+            <img src="assets/bsb-website-shots-39.jpeg" alt="Breads taken out of the oven" style="height: 250px">
+            <p class="double">At Luca Loaves, we take pride in moulding the perfect creation born from simple ingredients. We share a passion and love for our craft like no other. We respect the history of artisan bakers that have come before us, and we honour their heritage with a fresh and creative approach. The communities we operate in demand that “homemade” means “homemade”. This is an authentic promise because this is where the real inspiration comes from. We bring raw ingredients to life, by combining them with passion and love to create authentic, honest baked goods that inspire a desire to bake more. We’re 100% committed to bringing you freshly baked bread made from scratch every single day using only the best ingredients, like 100% Aussie wheat fresh from the farm.</p>
+            <br>
+        </div>
+      </div>
     </div>
-    
   
     <section>
-        
-        <div>
-        <a name="Gallery" style="padding-top: 20px"><h1 style="text-align: center; padding-bottom: 100px"> Our Products</h1></a>  
-    </div>  
-        
-<div class="row">
-  <div class="column">
-    <div class="container">
-      <img src="assets/muffins.jpeg" alt="muffins" style="width:100%;">
-      <div class="content">
-          <h4 style="text-align: center">Muffins</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="container">
-      <img src="assets/breads.jpeg" alt="breads" style="width:100%;">
-      <div class="content">
-          <h4 style="text-align: center">Breads</h4>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="container">
-      <img src="assets/brownies.jpeg" alt="brownies" style="width: 100%">
-      <div class="content">
-        <h4 style="text-align: center">Brownies</h4>
-      </div>
-    </div>
-  </div>
-
-        
-        <div class="column">
-    <div class="container">
-      <img src="assets/cakes.jpeg" alt="cakes" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Cakes</h4>
-      </div>
-    </div>
-  </div>
+      <div class="container-sm">
+        <div class="mb-5">
+          <a name="Gallery"></a>
+          <h1 style="text-align: center;"> Our Products</h1>
         </div>
-       
- <div class="row">
-  
-
-  <div class="column">
-    <div class="container">
-      <img src="assets/cookies.jpeg" alt="cookies" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Cookies</h4>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="container">
-      <img src="assets/croissants.jpeg" alt="croissants" style="width: 100%">
-      <div class="content">
-        <h4 style="text-align: center">Croissants</h4>
-      </div>
-    </div>
-  </div>
         
-        <div class="column">
-    <div class="container">
-      <img src="assets/Eclairs.jpeg" alt="eclairs" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Eclairs</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="container">
-      <img src="assets/fruit tarts and pies.jpeg" alt="fruit" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Fruit Tarts and Pies</h4>
-      </div>
-    </div>
-  </div>
-    </div>
-  
-              <div class="row">
-  
-  <div class="column">
-    <div class="container">
-      <img src="assets/lamingtons.jpeg" alt="lamingtons" style="width: 100%">
-      <div class="content">
-        <h4 style="text-align: center">Lamingtons</h4>
-      </div>
-    </div>
-  </div>
-    
-  <div class="column">
-    <div class="container">
-      <img src="assets/macaroons.jpeg" alt="macaroons" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Macaroons</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="container">
-      <img src="assets/savoury pies.jpeg" alt="savoury" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Savoury Products</h4>
-     </div>
-    </div>
-  </div>
-
-     
-<div class="column">
-    <div class="container">
-      <img src="assets/roll.jpg" alt="pie roll" style="width:100%;">
-      <div class="content">
-        <h4 style="text-align: center">Pie Roll</h4>
-      </div>
-    </div>
- </div>
-</div>
-   
-</section>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/muffins.jpeg" alt="muffins" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Muffins</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/breads.jpeg" alt="breads" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Breads</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/brownies.jpeg" alt="brownies" style="width: 100%">
+                    <div class="content">
+                        <h4 style="text-align: center">Brownies</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/cakes.jpeg" alt="cakes" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Cakes</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-   
-<div class="footer">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/cookies.jpeg" alt="cookies" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Cookies</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/croissants.jpeg" alt="croissants" style="width: 100%">
+                    <div class="content">
+                        <h4 style="text-align: center">Croissants</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/Eclairs.jpeg" alt="eclairs" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Eclairs</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/fruit.jpeg" alt="fruit" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Fruit Tarts and Pies</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/lamingtons.jpeg" alt="lamingtons" style="width: 100%">
+                    <div class="content">
+                        <h4 style="text-align: center">Lamingtons</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/macaroons.jpeg" alt="macaroons" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Macaroons</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/savoury pies.jpeg" alt="savoury" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Savoury Products</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="container">
+                    <img src="assets/roll.jpg" alt="pie roll" style="width:100%;">
+                    <div class="content">
+                        <h4 style="text-align: center">Pie Roll</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
- <a name="Contact"><h2 style="text-transform: uppercase;">Contact Details</h2></a>
-    <h5>
-        300 Pits Street, Sydney <br>
-        Tel. (Bakery) 02 9180 2221 <br>
-        Mob. 041 231 231 <br>
-        Fax 02 9230 1234 <br>
-        <a href="mailto: infoLucaloaves.com.au" style="color: white">
-        Email: info@LLbakery.com.au </a> <br>
-        <a href="http://www.lucabakery.com.au" style="color: white">Web http://www.lucaloaves.com.au </a> <br>
+  <footer>
+    <div class="bg-dark mt-5">
+      <div class="footer container-sm" style="text-align: center;">
+        <br/>
+        <a name="Contact" href="#">
+          <img src="assets/logo-np-bg.png" alt="logo" style="width:12%;">
+        </a>
+        <br/>
+        <div class="mt-4">
+          <h5 style="color: white;">
+            300 Pits Street, Sydney <br>
+            Tel. (Bakery) 02 9180 2221 <br>
+            Mob. 041 231 231 <br>
+            Fax 02 9230 1234 <br>
+            <a href="mailto:info@lucaloaves.com.au" style="color: white">Email: info@LLbakery.com.au</a> <br>
+            <a href="http://www.lucaloaves.com.au" style="color: white">Web: http://www.lucaloaves.com.au</a> <br>
+          </h5>
+          <h5 style="text-align: center">
+              @2021 Luca Loaves Bakery, All Rights Reserved
+          </h5>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-      </h5>
-    <img src="assets/breads-sydney-bourke-street-bakery.jpeg" alt="Breads" style="padding-bottom: 100px">
-    
-  <h5 style="text-align: center">
-      @2021 Luca Loaves Bakery, All Rights Reserved
-</h5>
-</div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
