@@ -13,53 +13,70 @@
   
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+    <div class="d-flex">
       <a class="navbar-brand mx-5" href="./#Home">
-        <img src="assets/logo-np-bg.png" alt="logo" style="width:12%;">
+        <img src="assets/logo-np-bg.png" alt="logo" style="width: 12%;">
       </a>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link luca-text" aria-current="page" href="#Home">Home</a>
-          </li>
-          <li class="nav-item" >
-            <a class="nav-link luca-text" href="#Gallery">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link luca-text" href="shop.php">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link luca-text" href="#About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link luca-text" href="#Contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link luca-text" aria-current="page" href="#Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luca-text" href="#Gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luca-text" href="shop.php">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luca-text" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link luca-text" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
   <main>
     <a name="Home"></a>
-    <section class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(./assets/breads-sydney-bourke-street-bakery.jpeg); background-repeat: no-repeat; background-size: 100% 100%;">
-      <div class="container-fluid" style="text-align: center;">
-        <h1 class="text-white">Homemade aussie bread</h1>
-        <a class="btn btn-primary text-white mr-2" href="shop.php" role="button">Shop Now</a>
+    <div class="d-flex align-items-center position-relative vh-100 cover hero">
+      <div class="overlay"></div>
+      <div class="container-fluid">
+        <h1 class="text-white">Luca Loaves Bakery</h1>
+        <div class="w-75">
+          <h5 class="text-white">Experience the authentic taste of homemade Aussie bread, crafted with love and care. Each loaf is baked to perfection, delivering a delightful combination of softness and a satisfying crunch. From traditional recipes passed down through generations to innovative flavors that ignite your taste buds, our bread is a true testament to our dedication and passion.</h5>
+        </div>
+        <br/>
+        <br/>
+        <a class="btn btn-primary text-white mr-2" href="shop.php" role="button">Shop Now</a>  
       </div>
-    </section>
+    </div>
 
+    <a name="About"></a>
     <div class="container-sm mt-5">
       <div class="row">
         <div class="col side">
-          <a name="About"><h2>About Me</h2></a>
+          <h2>About Me</h2>
           <img src="assets/baker.jpeg" alt="Photo of myself" style="height: 250px">
+          <br/>
+          <br/>
           <p class="double"> Hi! My name is Jenny Berry. I had dreamed since childhood of being a pastry chef, but life took me down many other paths before I finally made the jump into setting up my own business. Luca Loaves is a new patisserie I opened in Sydney CBD.  </p>
         </div>
         <div class="col main">
             <h2>About Luca Loaves</h2>
             <img src="assets/bsb-website-shots-39.jpeg" alt="Breads taken out of the oven" style="height: 250px">
+            <br/>
+            <br/>
             <p class="double">At Luca Loaves, we take pride in moulding the perfect creation born from simple ingredients. We share a passion and love for our craft like no other. We respect the history of artisan bakers that have come before us, and we honour their heritage with a fresh and creative approach. The communities we operate in demand that “homemade” means “homemade”. This is an authentic promise because this is where the real inspiration comes from. We bring raw ingredients to life, by combining them with passion and love to create authentic, honest baked goods that inspire a desire to bake more. We’re 100% committed to bringing you freshly baked bread made from scratch every single day using only the best ingredients, like 100% Aussie wheat fresh from the farm.</p>
             <br>
         </div>
