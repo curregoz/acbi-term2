@@ -55,10 +55,10 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link luca-text" aria-current="page" href="index.php">Home</a>
+					<a class="nav-link luca-text" aria-current="page" href="index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link luca-text" href="aboutus.html">About Us</a>
+					<a class="nav-link luca-text" href="./#About">About Us</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link luca-text" href="careers.html">Careers</a>
