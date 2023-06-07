@@ -177,3 +177,7 @@ main {
 	color: #212529;
   }
   
+  #map {
+	height: 100%;
+  }
+  
