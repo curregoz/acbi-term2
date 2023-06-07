@@ -1,7 +1,14 @@
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	font-family: Arial;
 	color: #211a1a;
 	font-size: 0.9em;
+}
+
+main {
+	flex: 1;
 }
 
 #shopping-cart {
