@@ -39,37 +39,38 @@
 	</head>
 	<body>
 
+  
 	<header>
 		<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
+		<div class="d-flex">
 			<a class="navbar-brand mx-5" href="./#Home">
-				<img src="assets/logo-np-bg.png" alt="logo" style="width:12%;">
+			<img src="assets/logo-white.png" alt="logo" style="width: 12%;">
 			</a>
 			
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link luca-text" aria-current="page" href="./#Home">Home</a>
-					</li>
-					<li class="nav-item" >
-						<a class="nav-link luca-text" href="./#Gallery">Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link luca-text" href="shop.php">Shop</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link luca-text" href="./#About">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link luca-text" href="#Contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-			<!-- <div class="d-flex mx-5">
-				<a href="#" class="no-decoration">
-					<span class="badge text-bg-secondary "style="font-size: 1.0em;">4</span>
-					<i class="ph-bold ph-shopping-cart-simple" style="color: red; font-size: 1.5em;"></i>
-				</a>
-			</div> -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link luca-text" aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link luca-text" href="aboutus.html">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link luca-text" href="careers.html">Careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link luca-text" href="contactus.html">Contact</a>
+				</li>
+				<li class="nav-item btn btn-primary mx-1" style="--bs-btn-padding-y: 0rem; --bs-btn-padding-x: .1rem;">
+					<a class="nav-link luca-text" href="shop.php">Shop now</a>
+				</li>
+			</ul>
+		</div>
 		</nav>
 	</header>
 
@@ -191,7 +192,7 @@
 			<div class="footer container-sm" style="text-align: center;">
 			<br/>
 			<a name="Contact" href="#">
-				<img src="assets/logo-np-bg.png" alt="logo" style="width:12%;">
+				<img src="assets/logo.png" alt="logo" style="width:12%;">
 			</a>
 			<br/>
 			<div class="mt-4">
