@@ -162,7 +162,7 @@
 
 			<div class="row">
 				<?php
-					$product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+					$product_array = $db_handle->runQuery("SELECT * FROM product ORDER BY id ASC");
 					if (!empty($product_array)) { 
 						foreach($product_array as $key=>$value){
 				?>

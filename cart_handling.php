@@ -3,7 +3,7 @@
 	function addToCart($db_handle){
 		if (!empty($_POST["quantity"])) {
 			$productCode = $_GET["code"];
-			$productByCode = $db_handle->runQuery("SELECT * FROM tblproduct WHERE code='" . $productCode . "'");
+			$productByCode = $db_handle->runQuery("SELECT * FROM product WHERE code='" . $productCode . "'");
 			
 			if (!empty($productByCode)) {
 				$product = $productByCode[0];

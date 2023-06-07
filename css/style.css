@@ -141,7 +141,7 @@ main {
 }
 
 .hero {
-	background-image: url(../assets/background.jpeg);
+	background-image: url(../assets/background.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
