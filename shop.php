@@ -16,6 +16,9 @@
 			case "empty":
 				emptyCart();
 				break;
+			case "buy":
+				buy();
+				break;
 		}
 	}
 ?>
@@ -149,7 +152,13 @@
 						</td>
 					</tr>
 				</tbody>
-			</table>		
+			</table>
+			<br/>
+			<a class="btn btn-primary float-end" href="shop.php?action=buy">
+				Buy
+			</a>
+			<br/>
+			<br/>
 			<?php
 				} else {
 			?>
@@ -168,7 +177,6 @@
 				?>
 				<div class="col-md-4">
 					<form method="post" action="shop.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
-
 						<div class="card mb-4">
 							<img src="<?php echo $product_array[$key]["image"]; ?>" class="card-img-top cover" alt="<?php echo $product_array[$key]["image"]; ?>">
 							<div class="card-body">
