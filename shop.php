@@ -16,9 +16,6 @@
 			case "empty":
 				emptyCart();
 				break;
-			case "buy":
-				buy();
-				break;
 		}
 	}
 ?>
@@ -154,9 +151,10 @@
 				</tbody>
 			</table>
 			<br/>
-			<a class="btn btn-primary float-end" href="shop.php?action=buy">
+			<button class="btn btn-primary float-end" onclick="openWhatsApp()">
 				Buy
-			</a>
+			</button>
+
 			<br/>
 			<br/>
 			<?php
@@ -220,5 +218,37 @@
 	</footer>
 	
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	
+	<script>
+		function openWhatsApp() {
+			<?php
+			if (!empty($_SESSION["cart_item"])) {
+				$products = $_SESSION["cart_item"];
+				$orderMessage = "Hello Luca Loaves.\n Order Summary:\n";
+				$total = 0;
+
+				foreach ($products as $product) {
+					$name = $product["name"];
+					$quantity = $product["quantity"];
+					$price = $product["price"];
+
+					$subtotal = sprintf("%.2f",$quantity * $price);
+					$total += sprintf("%.2f",$subtotal);
+
+					$orderMessage .= "- $name (Quantity: $quantity, Price: $price, Subtotal: $subtotal)\n";
+				}
+				$orderMessage .= "Total: ".sprintf("%.2f",$total)."\n"; 
+
+				$encodedOrderSummary = urlencode($orderMessage);
+				$whatsappURL = "https://wa.me/610290001234?text=" . $encodedOrderSummary;
+			}
+			?>
+	
+			var newWindow = window.open("<?php echo $whatsappURL; ?>", '_blank');
+			if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+				window.location.href = "<?php echo $whatsappURL; ?>";
+			}
+		}
+	</script>
 </body>
 </html>
