@@ -170,11 +170,13 @@
 					<form method="post" action="shop.php?action=add&code=<?php echo $product_array[$key]["code"]; ?>">
 
 						<div class="card mb-4">
-							<img src="<?php echo $product_array[$key]["image"]; ?>" class="card-img-top" alt="<?php echo $product_array[$key]["image"]; ?>">
+							<img src="<?php echo $product_array[$key]["image"]; ?>" class="card-img-top cover" alt="<?php echo $product_array[$key]["image"]; ?>">
 							<div class="card-body">
 								<h5 class="card-title"><?php echo $product_array[$key]["name"]; ?></h5>
 								<p class="card-text"><?php echo "$".$product_array[$key]["price"]; ?></p>
-								<input type="text" class="product-quantity" name="quantity" value="1" size="2" /><input type="submit" value="Add to Cart" class="btnAddAction" />
+								<p class="card-text"><?php echo $product_array[$key]["schedule"];?></p>
+								<input type="text" class="product-quantity" name="quantity" value="1" size="2" />
+								<input type="submit" value="Add to Cart" class="btnAddAction btn btn-primary " />
 							</div>
 						</div>
 					</form>

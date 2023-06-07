@@ -147,6 +147,13 @@ main {
 	position: relative;
 }
 
+.hero-2 {
+	background-image: url(../assets/background-2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
 .overlay {
 	position: absolute;
 	top: 0;
